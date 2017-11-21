@@ -1,8 +1,4 @@
-/** given a list of items - print out 
-//odd occurences or even depending on type input 
-    'odd' || 'even'
-**/
-function oddsOrEvens(inputList, type) {
+function oddAppearance(inputList, type) {
   var inputListArray = inputList.split(" ");
   var inputListObj = {};
   
