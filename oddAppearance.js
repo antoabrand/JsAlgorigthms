@@ -20,4 +20,6 @@ function oddAppearance(inputList, type) {
     }
   }
 }
-oddsOrEvens("a b a b b c", "odd");
+
+oddAppearance('a b a b b c', 'odd');
+//oddAppearance('a b a b b c', 'even');
