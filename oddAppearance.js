@@ -1,3 +1,7 @@
+var inputList = 'a b e c d f f f g';
+const ODD = 'odd';
+const EVEN = 'even';
+
 function oddAppearance(inputList, type) {
   let inputListArray = inputList.split(" ");
   let inputListObj = {};
@@ -25,5 +29,13 @@ function oddAppearance(inputList, type) {
   }
 }
 
-oddAppearance('a b a b b c', 'odd');
+function sort(inputList) {
+  inputListArray = inputList.split(' ');
+  for(let i in inputListArray){
+    console.log(i);
+  }
+}
+
+sort(inputList);
+oddAppearance(inputList, ODD);
 //oddAppearance('a b a b b c', 'even');

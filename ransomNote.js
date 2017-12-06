@@ -4,7 +4,7 @@ function ransomNote(desiredMsg, wordsToWorkWith) {
   var wordsToWorkWithObj = {};
 
   wordsToWorkWithArray.forEach(word => {
-    if (!wordsToWorkWithObj[word]) wordsToWorkWithObj[word] = 0;
+    if (!wordsToWorkWithObj[word]) wordsToWorkWithObj.map(word=> 0);
     wordsToWorkWithObj[word]++;
   });
 
