@@ -10,18 +10,19 @@ var ransomNote = function (desiredMsg, wordsToWorkWith) {
     wordsToWorkWithObj[word]++;
   });
 
+  var noteIsPossible = true;
+  var wordQty;
   desiredMsgArray.forEach(desiredWord => {
     //check if each word is present in wordsToWorkWithArray
     for (var availableWord in wordsToWorkWithObj) {
-      if (availableWord === desiredWord) {
+      if (desiredWord === availableWord) {
         wordsToWorkWithObj[availableWord]--;
-        console.log( wordsToWorkWithObj[availableWord]);
+        noteIsPossible = true;
+      }
+      if (wordsToWorkWithObj[availableWord] <= 0) {
+        noteIsPossible = false;
       }
     }
-    if (wordsToWorkWithObj[availableWord] <= 0)
-      return console.log('Not enough words, sorry :(');
-    else {
-      return console.log("You're good!");
-    }
   });
+  console.log('Note Is Possible: ' + noteIsPossible);
 };
