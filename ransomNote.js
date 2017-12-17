@@ -5,7 +5,7 @@ var ransomNote = function (desiredMsg, wordsToWorkWith) {
   var noteIsPossible = true;
 
   /**
-   * Checks if propert is present in wordsToWorkWithObj - if not present add the property and assign value of 0
+   * Checks if property is present in wordsToWorkWithObj - if not present add the property and assign value of 0
    * then increment the value by 1 to keep count of how man times its being pushed to new object
    **/
   wordsToWorkWithArray.forEach(word => {
