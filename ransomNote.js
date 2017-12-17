@@ -19,6 +19,7 @@ var ransomNote = function (desiredMsg, wordsToWorkWith) {
     //if word is present, decrement the value by 1 to keep track of how many we have left before we run
     if (wordsToWorkWithObj[availableWord]) {
       wordsToWorkWithObj[availableWord]--;
+      //if value of key at availableWord is less than zero - not impossible, no more words left
       if (wordsToWorkWithObj[availableWord] < 0) {
         noteIsPossible = false;
       }
