@@ -6,7 +6,7 @@ var ransomNote = function (desiredMsg, wordsToWorkWith) {
 
   /**
    * Checks if property is present in wordsToWorkWithObj - if not present add the property and assign value of 0
-   * then increment the value by 1 to keep count of how man times its being pushed to new object
+   * then increment the value by 1 to keep count of how many times it's being pushed to new object
    **/
   wordsToWorkWithArray.forEach(word => {
     if (!wordsToWorkWithObj[word]) {
@@ -16,10 +16,10 @@ var ransomNote = function (desiredMsg, wordsToWorkWith) {
   });
 
   desiredMsgArray.forEach(desiredWord => {
-    //if word is present, decrement the value by 1 to keep track of how many we have left before we run
+    //if word is present, decrement value by 1- keeps track of how many we have left
     if (wordsToWorkWithObj[availableWord]) {
       wordsToWorkWithObj[availableWord]--;
-      //if value of key at availableWord is less than zero - not impossible, no more words left
+      //no more words left
       if (wordsToWorkWithObj[availableWord] < 0) {
         noteIsPossible = false;
       }
