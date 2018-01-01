@@ -1,4 +1,4 @@
-(function () {
+( function () {
   var vm = this;
 
   vm.ransomNote = ransomNote;
@@ -35,4 +35,4 @@
     });
     console.log('Note Is Possible: ' + noteIsPossible);
   }
-})();
+}());

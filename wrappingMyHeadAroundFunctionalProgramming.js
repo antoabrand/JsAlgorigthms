@@ -19,7 +19,7 @@ var oddItemsInInitialArray = mapForEach(intialArray, function(item){
     if (item % 2 !== 0){
         return item;
     }
-    return
+    return;
 })
 
 console.log(oddItemsInInitialArray);
