@@ -35,7 +35,3 @@ function sort(inputList) {
     console.log(i);
   }
 }
-
-sort(inputList);
-oddAppearance(inputList, ODD);
-//oddAppearance('a b a b b c', 'even');

@@ -15,3 +15,8 @@ Learning and practicing known algorithms in javascript
 --RansomNote(): -function that takes two string arguments (msgText,magazineTxt) and searches
     if it's possible to construct desired message with the available words in the 
     magazineTxt string  - linear complexity - no nested for loops O(n)
+
+--IsPalindrome(): basic checking of a palindrome given a string - does not take into account spaces, and special
+    characters 
+
+--CeasarCipher() - encryption and decryption function - takes string and key
