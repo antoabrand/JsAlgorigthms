@@ -19,4 +19,4 @@ Learning and practicing known algorithms in javascript
 --IsPalindrome(): basic checking of a palindrome given a string - does not take into account spaces, and special
     characters 
 
---CeasarCipher() - encryption and decryption function - takes string and key
+--CeasarCipher() - encryption and decryption function
